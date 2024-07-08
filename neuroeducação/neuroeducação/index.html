@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios da Neuroeducação na Formação de Professores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f1;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            position: relative;
+            height: 400px;
+            color: #f0870f;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            text-align: center;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 0;
+            padding: 5px 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .infographic {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .infographic img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .infographic img:hover {
+            transform: scale(1.1);
+            animation: zoomIn 0.3s ease-in-out;
+        }
+
+        .images-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .images-column img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 200px;
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .images-column {
+                flex-direction: row;
+                overflow-x: auto;
+                gap: 10px;
+            }
+
+            .images-column img {
+                width: auto;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 150px;
+                padding: 5px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header h2 {
+                font-size: 0.8em;
+            }
+
+            .container {
+                padding: 5px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .images-column img {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <video autoplay muted loop>
+            <source src="videos/neuroeducacao.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <h1>Benefícios da Neuroeducação na Formação de Professores</h1>
+        <h2>FAEM - Tecnologias Educacionais | Professora: Dinoelia Souza</h2>
+    </header>
+    <div class="container">
+        <div class="section" data-aos="fade-up">
+            <h2>Princípios da Neuroeducação</h2>
+            <ul>
+                <li><strong>Plasticidade Neural:</strong> O cérebro é capaz de se reorganizar e formar novas conexões ao longo da vida, destacando a importância da prática e da experiência na aprendizagem contínua.</li>
+                <li><strong>Individualização:</strong> Cada cérebro é único, e os alunos têm diferentes estilos de aprendizagem e ritmos. A Neuroeducação enfatiza a necessidade de personalizar o ensino para atender às necessidades individuais dos alunos.</li>
+                <li><strong>Importância das Emoções:</strong> As emoções têm um papel crucial na aprendizagem. Estados emocionais positivos podem facilitar a retenção de informações, enquanto estados negativos podem dificultar o aprendizado.</li>
+                <li><strong>Integração Sensorial:</strong> Aprender envolve múltiplos sentidos. Incorporar abordagens multissensoriais pode enriquecer a experiência de aprendizagem e ajudar na retenção de informações.</li>
+                <li><strong>Contextualização:</strong> A aprendizagem é mais eficaz quando o conteúdo é relevante e significativo para os alunos. Contextualizar o ensino dentro da vida e experiências dos alunos aumenta o engajamento e a compreensão.</li>
+                <li><strong>Repetição e Prática Espaçada:</strong> A repetição e a prática distribuída ao longo do tempo são fundamentais para a consolidação da memória e do aprendizado. A prática espaçada é mais eficaz do que a prática intensiva em um curto período.</li>
+                <li><strong>Feedback e Correção de Erros:</strong> O feedback imediato e construtivo ajuda os alunos a corrigirem seus erros e a melhorar continuamente. A Neuroeducação enfatiza a importância de um feedback contínuo e específico.</li>
+                <li><strong>Ambiente de Aprendizagem Enriquecido:</strong> Ambientes de aprendizagem ricos e estimulantes podem promover o desenvolvimento cognitivo e a curiosidade. Isso inclui a criação de espaços físicos e sociais que incentivem a exploração e a interação.</li>
+                <li><strong>Metacognição:</strong> Incentivar os alunos a refletirem sobre seu próprio processo de aprendizagem, identificando estratégias eficazes e áreas de melhoria, é fundamental para o desenvolvimento da autonomia e do pensamento crítico.</li>
+                <li><strong>Saúde do Cérebro:</strong> Há uma forte conexão entre a saúde física e a aprendizagem. Promover hábitos saudáveis, como sono adequado, alimentação balanceada e exercício físico, é essencial para o funcionamento otimizado do cérebro.</li>
+                <li><strong>Não esqueça:</strong> Beijar é uma ótima maneira de evitar a degeneração neural. <strong>Fica a Dica!</strong></li>
+            </ul>
+        </div>
+        <div class="section" data-aos="fade-up">
+            <h2>
+                Aplicação da Neuroeducação</h2>
+                <ul>
+                    <li><strong>Desenvolvimento de Currículos Baseados na Neurociência:</strong> Elaborar currículos que considerem como o cérebro aprende melhor, incorporando atividades que estimulam diferentes áreas cerebrais e favorecendo a memorização e a compreensão.</li>
+                    <li><strong>Capacitação de Professores:</strong> Oferecer formação continuada sobre os princípios da neurociência aplicada à educação, permitindo que os professores adaptem suas estratégias de ensino.</li>
+                    <li><strong>Estratégias de Ensino Personalizadas:</strong> Aplicar métodos de ensino que levem em consideração as diferenças individuais na aprendizagem, como estilos de aprendizagem, ritmos e necessidades específicas dos alunos.</li>
+                    <li><strong>Ambientes de Aprendizagem Enriquecidos:</strong> Criar ambientes que estimulem a curiosidade e o engajamento dos alunos, utilizando recursos variados como materiais visuais, auditivos e táteis.</li>
+                    <li><strong>Uso de Tecnologia Educacional:</strong> Utilizar ferramentas tecnológicas que promovam o aprendizado adaptativo e personalizado, ajustando o conteúdo e a dificuldade com base no desempenho e nas necessidades dos alunos.</li>
+                    <li><strong>Incorporação de Técnicas de Mindfulness:</strong> Implementar práticas de mindfulness na rotina escolar para ajudar os alunos a melhorarem a concentração, reduzir o estresse e desenvolver habilidades socioemocionais.</li>
+                    <li><strong>Práticas de Metacognição:</strong> Ensinar os alunos a refletirem sobre seu próprio processo de aprendizagem, ajudando-os a identificar as estratégias que funcionam melhor para eles e a desenvolver habilidades de autorregulação.</li>
+                    <li><strong>Feedback Constante e Imediato:</strong> Fornecer feedback frequente e específico para ajudar os alunos a entenderem seus erros e a fazerem ajustes necessários, promovendo uma aprendizagem contínua e eficaz.</li>
+                    <li><strong>Integração de Atividades Físicas:</strong> Incluir atividades físicas regulares no ambiente escolar, pois o exercício tem um impacto positivo na função cognitiva e no bem-estar emocional dos alunos.</li>
+                    <li><strong>Projetos Interdisciplinares:</strong> Promover a aprendizagem por meio de projetos interdisciplinares que permitam aos alunos aplicar conhecimentos de diferentes áreas de estudo de forma integrada e prática.</li>
+                    <li><strong>Apoio Socioemocional:</strong> Desenvolver programas que foquem no desenvolvimento socioemocional dos alunos, ajudando-os a gerenciar suas emoções, estabelecer relações saudáveis e desenvolver a resiliência.</li>
+                    <li><strong>Utilização de Avaliações Formativas:</strong> Adotar avaliações formativas que permitam monitorar o progresso dos alunos ao longo do processo de aprendizagem, em vez de se concentrar apenas em avaliações somativas.</li>
+                    <li><strong>Prática de Repetição Espaçada:</strong> Incorporar a prática espaçada ao invés da prática massiva para ajudar na retenção de informações a longo prazo, estruturando revisões periódicas do conteúdo.</li>
+                    <li><strong>Modelos de Ensino Colaborativos:</strong> Implementar modelos de ensino que promovam a colaboração entre alunos, como aprendizagem cooperativa e trabalhos em grupo, para estimular habilidades sociais e cognitivas.</li>
+                    <li><strong>Estímulo à Criatividade e Inovação:</strong> Incentivar a criatividade e a inovação no ambiente escolar, proporcionando oportunidades para que os alunos explorem suas ideias e soluções de forma livre e criativa.</li>
+                </ul>
+            </div>
+            <div class="section images-column" data-aos="fade-up">
+                <img src="imagens/foto_turma6.jpg" alt="Turma Foto 2">
+                <img src="imagens/foto_turma3.jpg" alt="Turma Foto 3">
+                <img src="imagens/foto_turma4.jpg" alt="Turma Foto 4">
+                <img src="imagens/foto_turma2.png" alt="Turma Foto 5">
+                <img src="imagens/foto_turma7.jpg" alt="Turma Foto 6">
+            </div>
+            <div class="section video-section" data-aos="fade-up">
+                <h2>Vídeo sobre Neuroeducação</h2>
+                <video controls width="100%">
+                    <source src="videos/trabalho_faem_prof_dinoelia" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+            <div class="section video-section" data-aos="fade-up">
+                <h2>Vídeos sobre Neuroeducação</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=0cx6GUifxIw&authuser=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rSw3z3oXoUw&authuser=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=QsGlVOX4K34&authuser=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=QsGlVOX4K34&authuser=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+                    
+            </div>
+            <div class="section pdf-section" data-aos="fade-up">
+                <h2>Artigos e Materiais sobre Neuroeducação</h2>
+                <ul>
+                    <li><a href="artigos/a_neurociencia_como_mediacao.pdf" target="_blank">Artigo 1: Neurociencia como Mediação</a></li>
+                    <li><a href="artigos/a_neuroeducacao_e_a_neurociencia.pdf" target="_blank">Artigo 2: A Neuroeducação e a Neruociencia</a></li>
+                    <li><a href="artigos/contribuicoes_da_neurociencia_para_a_pratica_pedagogica.pdf" target="_blank">Artigo 3: Contribuições da Neuroeducação na Pratica Pedagógica</a></li>
+                    <li><a href="artigos/ine_ead_neurociencia_e_aprendizagem.pdf" target="_blank">Artigo 4: Neurociencia e Aprendizagem</a></li>
+                    <li><a href="artigos/metodologias_ativas_sob_o_ponto_de_vista_da_neuro_ciencia.pdf" target="_blank">Artigo 5: Metodologias Ativas sobre o ponto de vista da neurociencia</a></li>
+                    <li><a href="artigos/neuro_educacao_e_tecnologia.pdf" target="_blank">Artigo 6: Neuroeducação e Tecnologia</a></li>
+                    <li><a href="artigos/neurociencia_e_aprendizagem.pdf" target="_blank">Artigo 7: Neurociencia e Aprendizagem</a></li>
+                    <li><a href="artigos/pesquisas_em_temas_de_ciencias_da_educacao.pdf" target="_blank">Artigo 8: Pesquisa em temas de Ciencias da Educação</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Benefícios da Neuroeducação na Formação de Professores | by Manoel Santos | FAEM | Tecnologias Educacionais</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    </html>
+    
